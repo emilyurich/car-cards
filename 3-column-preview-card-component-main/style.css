@@ -1,0 +1,78 @@
+body,
+h2,
+p {
+  margin: 0;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  /* font-size: 15px; */
+  color: white;
+}
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+main section {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+main section p {
+  margin: 20px 0;
+}
+
+.sedan-container {
+  background-color: hsl(31, 77%, 52%);
+  flex: 1;
+}
+.suv-container {
+  background-color: hsl(184, 100%, 22%);
+  flex: 1;
+}
+
+.luxury-container {
+  background-color: hsl(179, 100%, 13%);
+  flex: 1;
+}
+
+h2 {
+  font-family: "Big Shoulders Display", cursive;
+  margin-top: 20px;
+  font-size: 46px;
+}
+
+a {
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.sedan-container a {
+  color: hsl(31, 77%, 52%);
+}
+
+.suv-container a {
+  color: hsl(184, 100%, 22%);
+}
+.luxury-container a {
+  color: hsl(179, 100%, 13%);
+}
+
+a:hover {
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  main {
+    flex-direction: row;
+  }
+}
